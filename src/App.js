@@ -21,18 +21,29 @@ let initialState = [
 
 const App = () => {
     const [atividades, setAtividades] = useState(initialState);
+    const [atividade, setAtividade] = useState({});
 
     const addAtividade = (e) => {
         e.preventDefault();
 
         const atividade = {
-            id: document.getElementById('id').value,
+            id:
+                Math.max.apply(
+                    Math,
+                    atividades.map((item) => item.id)
+                ) + 1,
             prioridade: document.getElementById('prioridade').value,
             titulo: document.getElementById('titulo').value,
             descricao: document.getElementById('descricao').value,
         };
 
         setAtividades([...atividades, { ...atividade }]);
+    };
+
+    const editarAtividade = (id) => {
+        const atividade = atividades.filter((atividade) => atividade.id === id);
+
+        setAtividade(atividade[0]);
     };
 
     const deletarAtividade = (id) => {
@@ -47,10 +58,12 @@ const App = () => {
             <div className='container p-2'>
                 <AtividadeForm
                     addAtividade={addAtividade}
+                    ativSelecionada={atividade}
                     atividades={atividades}
                 />
                 <AtividadeLista
                     atividades={atividades}
+                    editarAtividade={editarAtividade}
                     deletarAtividade={deletarAtividade}
                 />
             </div>

@@ -1,7 +1,5 @@
-import React from 'react';
-
 export default function Atividades(props) {
-    const { ativ, deletarAtividade } = props;
+    const { ativ, editarAtividade, deletarAtividade } = props;
 
     const prioriedadeLabel = (arg) => {
         switch (arg) {
@@ -71,7 +69,10 @@ export default function Atividades(props) {
                 </div>
                 <p className='card-text'>{ativ.descricao}</p>
                 <div className='d-flex justify-content-end border-top pt-2 m-0'>
-                    <button className='btn btn-sm btn-outline-primary me-2'>
+                    <button
+                        className='btn btn-sm btn-outline-primary me-2'
+                        onClick={() => editarAtividade(ativ.id)}
+                    >
                         <i className='fas fa-pen me-2'></i>
                         Editar
                     </button>

@@ -1,9 +1,7 @@
-import React from 'react';
-
 import Atividade from './Atividade';
 
 export default function AtividadeLista(props) {
-    const { atividades, deletarAtividade } = props;
+    const { atividades, editarAtividade, deletarAtividade } = props;
 
     return (
         <div className='mt-3'>
@@ -11,6 +9,7 @@ export default function AtividadeLista(props) {
                 <Atividade
                     key={ativ.id}
                     ativ={ativ}
+                    editarAtividade={editarAtividade}
                     deletarAtividade={deletarAtividade}
                 />
             ))}
