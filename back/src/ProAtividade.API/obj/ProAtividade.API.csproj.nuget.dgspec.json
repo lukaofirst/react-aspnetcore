@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj": {}
+    "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj": {}
   },
   "projects": {
-    "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj": {
+    "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
+        "projectUniqueName": "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
         "projectName": "ProAtividade.API",
-        "projectPath": "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
+        "projectPath": "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\obj\\",
+        "outputPath": "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +39,24 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -67,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
