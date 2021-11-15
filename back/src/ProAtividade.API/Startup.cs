@@ -43,6 +43,8 @@ namespace ProAtividade.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProAtividade.API v1");
+
+                    // note.: Line needed to open the project with swagger ui route
                     c.RoutePrefix = string.Empty;
                 });
             }
