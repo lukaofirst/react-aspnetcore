@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P3p6qM+NWza1per7xpVKgjjN5PQDjwWw7LtfnUU9qQzVPDfTmEfmCYvmgNqXpK+Kn0hCBvxv2KNLYwGZi+7TyQ==",
+  "dgSpecHash": "eN8LBnU082yqOpcM/YimR17NdtXur0aqSgg/nN88+oImVmIqdXOX+s1OCielhALrQIwW894fhHL/Mi+tiLnP8A==",
   "success": true,
-  "projectFilePath": "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
+  "projectFilePath": "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

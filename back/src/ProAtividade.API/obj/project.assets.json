@@ -5,7 +5,7 @@
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Humanizer.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
@@ -1298,11 +1298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
+      "projectUniqueName": "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
       "projectName": "ProAtividade.API",
-      "projectPath": "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
+      "projectPath": "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\ProAtividade.API.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "e:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\obj\\",
+      "outputPath": "E:\\My Projects\\react-aspnetcore\\back\\src\\ProAtividade.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1312,6 +1312,7 @@
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1373,7 +1374,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
