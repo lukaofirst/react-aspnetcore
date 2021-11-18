@@ -3,12 +3,10 @@ export default function Atividades(props) {
 
     const prioriedadeLabel = (arg) => {
         switch (arg) {
-            case '1':
-                return 'Baixa';
-            case '2':
-                return 'Normal';
-            case '3':
-                return 'Alta';
+            case 'Baixa':
+            case 'Normal':
+            case 'Alta':
+                return arg;
             default:
                 return 'Não definido';
         }
@@ -16,17 +14,17 @@ export default function Atividades(props) {
 
     const prioriedadeStyle = (arg) => {
         switch (arg) {
-            case '1':
+            case 'Baixa':
                 return {
                     icon: 'smile',
                     color: 'dark',
                 };
-            case '2':
+            case 'Normal':
                 return {
                     icon: 'meh',
                     color: 'success',
                 };
-            case '3':
+            case 'Alta':
                 return {
                     icon: 'frown',
                     color: 'warning',
