@@ -6,13 +6,12 @@ import AtividadeLista from './components/AtividadeLista';
 import api from './api/atividade';
 
 const App = () => {
-    const [index] = useState(0);
     const [atividades, setAtividades] = useState([]);
     const [atividade, setAtividade] = useState({ id: 0 });
 
     const pegarTodasAtividades = async () => {
         const response = await api.get('atividade');
-        console.log(response);
+
         return response.data;
     };
 
@@ -26,8 +25,10 @@ const App = () => {
         getAtividades();
     }, []);
 
-    const addAtividade = (ativ) => {
-        setAtividades([...atividades, { ...ativ, id: index }]);
+    const addAtividade = async (ativ) => {
+        const response = await api.post('atividade', ativ);
+
+        setAtividades([...atividades, response.data]);
     };
 
     const editarAtividade = (id) => {
@@ -40,19 +41,24 @@ const App = () => {
         setAtividade({ id: 0 });
     };
 
-    const atualizarAtividade = (ativ) => {
+    const atualizarAtividade = async (ativ) => {
+        const response = api.put(`atividade/${ativ.id}`, ativ);
+        const { id } = response.data;
+
         setAtividades(
-            atividades.map((item) => (item.id === ativ.id ? ativ : item))
+            atividades.map((item) => (item.id === id ? response.data : item))
         );
 
         setAtividade({ id: 0 });
     };
 
-    const deletarAtividade = (id) => {
-        const atividadesFiltradas = atividades.filter(
-            (atividade) => atividade.id !== id
-        );
-        setAtividades([...atividadesFiltradas]);
+    const deletarAtividade = async (id) => {
+        if (await api.delete(`atividade/${id}`)) {
+            const atividadesFiltradas = atividades.filter(
+                (atividade) => atividade.id !== id
+            );
+            setAtividades([...atividadesFiltradas]);
+        }
     };
 
     return (
