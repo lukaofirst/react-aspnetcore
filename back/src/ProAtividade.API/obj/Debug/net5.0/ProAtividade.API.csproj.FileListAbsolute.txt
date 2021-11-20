@@ -55,3 +55,7 @@ E:\My Projects\react-aspnetcore\back\src\ProAtividade.API\bin\Debug\net5.0\runti
 E:\My Projects\react-aspnetcore\back\src\ProAtividade.API\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 E:\My Projects\react-aspnetcore\back\src\ProAtividade.API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
 E:\My Projects\react-aspnetcore\back\src\ProAtividade.API\obj\Debug\net5.0\staticwebassets\ProAtividade.API.StaticWebAssets.xml
+E:\My Projects\react-aspnetcore\back\src\ProAtividade.API\bin\Debug\net5.0\ProAtividade.Data.dll
+E:\My Projects\react-aspnetcore\back\src\ProAtividade.API\bin\Debug\net5.0\ProAtividade.Domain.dll
+E:\My Projects\react-aspnetcore\back\src\ProAtividade.API\bin\Debug\net5.0\ProAtividade.Data.pdb
+E:\My Projects\react-aspnetcore\back\src\ProAtividade.API\bin\Debug\net5.0\ProAtividade.Domain.pdb
