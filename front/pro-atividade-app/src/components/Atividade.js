@@ -1,5 +1,5 @@
 export default function Atividades(props) {
-    const { ativ, editarAtividade, deletarAtividade } = props;
+    const { ativ, editarAtividade, handleConfirmModal } = props;
 
     const prioriedadeLabel = (arg) => {
         switch (arg) {
@@ -76,7 +76,7 @@ export default function Atividades(props) {
                     </button>
                     <button
                         className='btn btn-sm btn-outline-danger'
-                        onClick={() => deletarAtividade(ativ.id)}
+                        onClick={() => handleConfirmModal(ativ.id)}
                     >
                         <i className='fas fa-trash me-2'></i>
                         Deletar

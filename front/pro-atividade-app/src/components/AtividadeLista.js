@@ -1,7 +1,7 @@
 import Atividade from './Atividade';
 
 export default function AtividadeLista(props) {
-    const { atividades, editarAtividade, deletarAtividade } = props;
+    const { atividades, editarAtividade, handleConfirmModal } = props;
 
     return (
         <div className='mt-3'>
@@ -10,7 +10,7 @@ export default function AtividadeLista(props) {
                     key={ativ.id}
                     ativ={ativ}
                     editarAtividade={editarAtividade}
-                    deletarAtividade={deletarAtividade}
+                    handleConfirmModal={handleConfirmModal}
                 />
             ))}
         </div>
