@@ -1,4 +1,4 @@
-import Atividade from './Atividade';
+import AtividadeItem from './AtividadeItem';
 
 export default function AtividadeLista(props) {
     const { atividades, editarAtividade, handleConfirmModal } = props;
@@ -6,7 +6,7 @@ export default function AtividadeLista(props) {
     return (
         <div className='mt-3'>
             {atividades.map((ativ) => (
-                <Atividade
+                <AtividadeItem
                     key={ativ.id}
                     ativ={ativ}
                     editarAtividade={editarAtividade}

@@ -1,4 +1,4 @@
-export default function Atividades(props) {
+export default function AtividadeItem(props) {
     const { ativ, editarAtividade, handleConfirmModal } = props;
 
     const prioriedadeLabel = (arg) => {

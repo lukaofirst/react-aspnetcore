@@ -5,11 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootswatch/dist/cosmo/bootstrap.min.css';
 import App from './App';
 import Menu from './components/Menu';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Menu />
-        <App />
+        <Router>
+            <Menu />
+            <App />
+        </Router>
     </React.StrictMode>,
     document.getElementById('root')
 );
