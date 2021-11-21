@@ -1,8 +1,9 @@
 import { useState, useEffect, Fragment } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import './App.css';
-import AtividadeForm from './components/AtividadeForm';
-import AtividadeLista from './components/AtividadeLista';
+import AtividadeForm from './components/pages/atividades/AtividadeForm';
+import AtividadeLista from './components/pages/atividades/AtividadeLista';
+import TitlePage from './components/TitlePage';
 import api from './api/atividade';
 
 const App = () => {
@@ -96,14 +97,15 @@ const App = () => {
     return (
         <Fragment>
             <div className='container p-2'>
-                <div className='d-flex justify-content-between align-items-center mt-2 pb-3 border-bottom border-1'>
-                    <h1 className='m-0 p-0'>
-                        Atividade {atividade.id !== 0 ? atividade.id : ''}
-                    </h1>
+                <TitlePage
+                    title={
+                        'Atividade ' + (atividade.id !== 0 ? atividade.id : '')
+                    }
+                >
                     <Button variant='outline-secondary' onClick={novaAtividade}>
                         <i className='fas fa-plus'></i>
                     </Button>
-                </div>
+                </TitlePage>
                 <AtividadeLista
                     atividades={atividades}
                     editarAtividade={editarAtividade}
