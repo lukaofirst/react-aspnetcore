@@ -1,6 +1,7 @@
 import { useState, Fragment } from 'react';
+import { useNavigate } from 'react-router-dom';
 import TitlePage from '../../components/TitlePage';
-import { InputGroup, FormControl } from 'react-bootstrap';
+import { Button, InputGroup, FormControl } from 'react-bootstrap';
 
 const clientes = [
     {
@@ -41,6 +42,7 @@ const clientes = [
 ];
 
 const ClienteLista = () => {
+    const navigate = useNavigate();
     const [termoBusca, setTermoBusca] = useState('');
 
     const handleInputChange = (e) => {
@@ -59,9 +61,17 @@ const ClienteLista = () => {
         );
     });
 
+    const novoCliente = () => {
+        navigate('/cliente/detalhe');
+    };
+
     return (
         <Fragment>
-            <TitlePage title='Cliente Lista' />
+            <TitlePage title='Cliente Lista'>
+                <Button variant='outline-secondary' onClick={novoCliente}>
+                    <i className='fas fa-plus me-2'></i> Novo Cliente
+                </Button>
+            </TitlePage>
             <InputGroup className='my-3'>
                 <InputGroup.Text>Buscar:</InputGroup.Text>
                 <FormControl
@@ -90,7 +100,14 @@ const ClienteLista = () => {
                             <td>{cliente.situacao}</td>
                             <td>
                                 <div>
-                                    <button className='btn btn-sm btn-outline-primary me-2'>
+                                    <button
+                                        className='btn btn-sm btn-outline-primary me-2'
+                                        onClick={() =>
+                                            navigate(
+                                                `/cliente/detalhe/${cliente.id}`
+                                            )
+                                        }
+                                    >
                                         <i className='fas fa-user-edit me-2'></i>
                                         Editar
                                     </button>
