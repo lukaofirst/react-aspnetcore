@@ -1,34 +1,20 @@
 import { Fragment } from 'react';
 import './App.css';
+import Dashboard from './pages/dashboard/Dashboard';
 import Atividade from './pages/atividades/Atividade';
-import { Route, Routes, Link } from 'react-router-dom';
+import Cliente from './pages/clientes/Cliente';
+import ClienteForm from './pages/clientes/ClienteForm';
+import { Route, Routes } from 'react-router-dom';
 
 export default function App() {
     return (
         <Fragment>
             <Routes>
-                <Route path='/' exact element={<Home />} />
-                <Route path='/atividades' element={<Atividade />} />
-                <Route path='/cliente' element={<Cliente />} />
+                <Route path='/' exact element={<Dashboard />} />
+                <Route path='/atividade/lista' element={<Atividade />} />
+                <Route path='/cliente/lista' element={<Cliente />} />
+                <Route path='/cliente/detalhe' element={<ClienteForm />} />
             </Routes>
         </Fragment>
     );
 }
-
-const Cliente = () => {
-    return (
-        <div className='container'>
-            <h1>Cliente</h1>
-            <Link to='/home'>Home</Link>
-        </div>
-    );
-};
-
-const Home = () => {
-    return (
-        <div className='container'>
-            <h1>Home</h1>
-            <Link to='/cliente'>Cliente</Link>
-        </div>
-    );
-};
