@@ -73,9 +73,9 @@ const ClienteLista = () => {
                 </Button>
             </TitlePage>
             <InputGroup className='my-3'>
-                <InputGroup.Text>Buscar:</InputGroup.Text>
+                <InputGroup.Text>Buscar</InputGroup.Text>
                 <FormControl
-                    placeholder='pelo nome do cliente'
+                    placeholder='por nome / responsável / contato / situação'
                     onChange={handleInputChange}
                 />
             </InputGroup>
