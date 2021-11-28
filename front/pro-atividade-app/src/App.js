@@ -15,7 +15,7 @@ export default function App() {
                 <Route path='/atividade/lista' element={<Atividade />} />
                 <Route path='/cliente/lista' element={<Cliente />} />
                 <Route path='/cliente/detalhe/:id' element={<ClienteForm />} />
-                <Route path='*' element={<PageNotFound />} />
+                <Route element={<PageNotFound />} />
             </Routes>
         </Fragment>
     );
